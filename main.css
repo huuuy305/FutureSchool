@@ -5559,10 +5559,14 @@ input[type="button"].btn-block {
 }
 
 .pagination {
+    margin: 0px 20px 10px;
     display: flex;
     padding-left: 0;
     list-style: none;
-    border-radius: .25rem
+    border-radius: 0.25rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
 }
 
 .page-link {
