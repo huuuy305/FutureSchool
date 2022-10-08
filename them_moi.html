@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Danh Sách Thành Viên</title>
+    <title>Trang Chủ</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="Inline validation is very easy to implement using the Architect Framework.">
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
     <link href="./main.css" rel="stylesheet">
 </head>
@@ -706,210 +706,37 @@
                     </div>
                 </div>
             </div>
-            <div class="app-main__outer">
-                <div class="app-main__inner">
-                    <h5 class="card-title_2">Sở Giáo Dục & Đào Tạo ...</h5>
-                    <h5 class="card-title_2">Phòng ...</h5>
-                    <h5 class="card-title_2">Trường ...</h5>
-                    <div class="menu_01">
-                        <ul>
-                            <li id="menu_li"><a href="#">Lọc</a></li>
-                            <li id="menu_li"><a href="./them_moi.html">Thêm Mới</a></li>
-                            </ul>
+    
+            <div class="card-body_tm">
+                <h5 class="card-title">Thêm Mới Thông Tin</h5>
+                <form class="">
+                    <div class="position-relative form-group"><label for="name" class="">Họ & tên</label><input
+                            type="text" name="name" id="name" placeholder="Vui lòng nhập họ & tên" class="form-control">
                     </div>
-                    <div class="main-card mb-3 card">
-                        <div class="card-body">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="exampleEmail22">Email</label>
-                                        <input name="email" id="exampleEmail22" type="email" class="form-control">
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="tel">Số Điện Thoại</label>
-                                        <input type="tel" class="form-control" id="tel" required>
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-4">
-                                        <label for="txtten">Họ & Tên</label>
-                                        <input type="txtten" class="form-control" id="txtten" required>
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-4">
-                                        <label for="text">Phân Quyền</label>
-                                        <input type="text" class="form-control" id="text" required>
-                                    </div>
-                                    <div class="col-md-2 mb-4">
-                                        <label for="text">Giới Tính</label>
-                                        <select name="select" id="exampleSelect" class="form-control">
-                                            <option>Nam</option>
-                                            <option>Nữ</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="active">Trạng Thái</label>
-                                        <select name="select" id="exampleSelect" class="form-control">
-                                            <option>Kích Hoạt</option>
-                                            <option>Không Kích Hoạt</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="validationTooltip05">Thời Gian Tạo</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
-                                    </div>
-                                    <button class="btn-wide btn btn-success" style="margin: 26px;">Sửa</button>
-                                    <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger" style="margin: 26px;"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Danh sách thành viên</h5>
-                    <div class="main-card mb-3 card">
-                        <div class="card-body_2">
-                            <table class="mb-0 table table-bordered">
-                                <thead>
-                                    <th></th>
-                                    <th>STT</th>
-                                    <th>Avatar</th>
-                                    <th>Họ & Tên</th>
-                                    <th>Email</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Giới tính</th>
-                                    <th>Ngày tháng năm sinh</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Phân quyền</th>
-                                    <th>Trạng thái</th>
-                                    <th>Thời gian tạo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> <input type="checkbox" />
-                                        <th scope="row">1</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" /></td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>Markdsflhbjklsdhflhfds@gmail.com</td>
-                                        <td>Otto</td>
-                                        <td>17-10-2000</td>
-                                        <td>Mark</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
-                                        <td>19-02-1999</td>
-                                    </tr>
-                                    <tr>
-                                        <td> <input type="checkbox" />
-                                        <th scope="row">2</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/5.jpg" /></td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>Jacob</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
-                                        <td>Jacob</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td> <input type="checkbox" />
-                                        <th scope="row">3</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt=""></td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
-                                        <td>Larry</td>
-                                    </tr>
-                                    <tr>
-                                        <td> <input type="checkbox" />
-                                        <th scope="row">4</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/1.jpg" /></td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
-                                        <td>Larry</td>
-                                    </tr>
-                                    <tr>
-                                        <td> <input type="checkbox" />
-                                        <th scope="row">5</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/9.jpg" /></td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
-                                        <td>Larry</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <ul class="pagination pagination-sm">
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link"
-                                    aria-label="Previous"><span aria-hidden="true">«</span><span
-                                        class="sr-only">Previous</span></a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link">1</a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link">2</a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link">3</a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link">4</a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link">5</a></li>
-                            <li class="page-item"><a href="javascript:void(0);" class="page-link"
-                                    aria-label="Next"><span aria-hidden="true">»</span><span
-                                        class="sr-only">Next</span></a></li>
-                        </ul>
-                    </div>
-                </div>
+                    <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input
+                            name="email" id="exampleEmail" placeholder="Vui lòng nhập Email" type="email"
+                            class="form-control"></div>
+                    <div class="position-relative form-group"><label for="name" class="">Số điện thoại</label><input
+                            type="text" name="name" id="name" placeholder="Vui lòng nhập số điện thoại"
+                            class="form-control"></div>
+                    <div class="position-relative form-group"><label for="examplePassword" class="">Mật
+                            khẩu</label><input name="password" id="examplePassword" placeholder="********"
+                            type="password" class="form-control"></div>
+                    <div class="position-relative form-group"><label for="examplePassword" class="">Nhập lại mật
+                            khẩu</label><input name="password" id="examplePassword" placeholder="********"
+                            type="password" class="form-control"></div>
+                    <div class="g-recaptcha" data-sitekey="6LfMWWQiAAAAAB49IK-RjCY8KmCopr6goJva0-1a"></div>
+                    <button class="mt-1 btn btn-primary">Popup</button>
+                    <button class="mt-1 btn btn-primary">Tiếp tục</button>
+                </form>
             </div>
         </div>
     </div>
+    </div>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 </body>
 
 </html>
