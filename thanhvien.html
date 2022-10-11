@@ -713,62 +713,80 @@
                     <h5 class="card-title_2">Trường ...</h5>
                     <div class="menu_01">
                         <ul>
-                            <li id="menu_li"><a href="#">Lọc</a></li>
                             <li id="menu_li"><a href="./them_moi.html">Thêm Mới</a></li>
-                            </ul>
-                    </div>
-                    <div class="main-card mb-3 card">
-                        <div class="card-body">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="exampleEmail22">Email</label>
-                                        <input name="email" id="exampleEmail22" type="email" class="form-control">
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="tel">Số Điện Thoại</label>
-                                        <input type="tel" class="form-control" id="tel" required>
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-4">
-                                        <label for="txtten">Họ & Tên</label>
-                                        <input type="txtten" class="form-control" id="txtten" required>
-                                        <div class="invalid-tooltip">
-                                            Trường không được bỏ trống
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-4">
-                                        <label for="text">Phân Quyền</label>
-                                        <input type="text" class="form-control" id="text" required>
-                                    </div>
-                                    <div class="col-md-2 mb-4">
-                                        <label for="text">Giới Tính</label>
-                                        <select name="select" id="exampleSelect" class="form-control">
-                                            <option>Nam</option>
-                                            <option>Nữ</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="active">Trạng Thái</label>
-                                        <select name="select" id="exampleSelect" class="form-control">
-                                            <option>Kích Hoạt</option>
-                                            <option>Không Kích Hoạt</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <label for="validationTooltip05">Thời Gian Tạo</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
-                                    </div>
-                                    <button class="btn-wide btn btn-success" style="margin: 26px;">Sửa</button>
-                                    <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger" style="margin: 26px;"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
-                                </div>
-                            </form>
+                        </ul>
                         </div>
+                        <button class="accordion">Lọc</button>
+                        <div class="panel">
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                        <div class="col-md-3 mb-3">
+                                            <label for="exampleEmail22">Email</label>
+                                            <input name="email" id="exampleEmail22" type="email" class="form-control">
+                                            <div class="invalid-tooltip">
+                                                Trường không được bỏ trống
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <label for="tel">Số Điện Thoại</label>
+                                            <input type="tel" class="form-control" id="tel" required>
+                                            <div class="invalid-tooltip">
+                                                Trường không được bỏ trống
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <label for="txtten">Họ & Tên</label>
+                                            <input type="txtten" class="form-control" id="txtten" required>
+                                            <div class="invalid-tooltip">
+                                                Trường không được bỏ trống
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 mb-4">
+                                            <label for="text">Phân Quyền</label>
+                                            <input type="text" class="form-control" id="text" required>
+                                        </div>
+                                        <div class="col-md-2 mb-4">
+                                            <label for="text">Giới Tính</label>
+                                            <select name="select" id="exampleSelect" class="form-control">
+                                                <option>Nam</option>
+                                                <option>Nữ</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <label for="active">Trạng Thái</label>
+                                            <select name="select" id="exampleSelect" class="form-control">
+                                                <option>Kích Hoạt</option>
+                                                <option>Không Kích Hoạt</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <label for="validationTooltip05">Thời Gian Tạo</label>
+                                            <input type="text" class="form-control" id="validationTooltip05" required>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                   
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+                    <div class="main-card mb-3 card">
+    
                     </div>
                 </div>
                 <div class="card-body">
@@ -789,104 +807,90 @@
                                     <th>Phân quyền</th>
                                     <th>Trạng thái</th>
                                     <th>Thời gian tạo</th>
+                                    <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td> <input type="checkbox" />
                                         <th scope="row">1</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" /></td>
+                                        <td class="widget-content-left"><img width="40" class="rounded-circle"
+                                                src="assets/images/avatars/4.jpg" /></td>
                                         <td>Otto</td>
                                         <td>@mdo</td>
                                         <td>Markdsflhbjklsdhflhfds@gmail.com</td>
                                         <td>Otto</td>
                                         <td>17-10-2000</td>
                                         <td>Mark</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
+                                        <td> ADMIN</td>
+                                        <td>Không kích hoạt</td>
                                         <td>19-02-1999</td>
+                                        <td><button class="btn-wide btn btn-success">Sửa</button></td>
                                     </tr>
                                     <tr>
                                         <td> <input type="checkbox" />
                                         <th scope="row">2</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/5.jpg" /></td>
+                                        <td class="widget-content-left"><img width="40" class="rounded-circle"
+                                                src="assets/images/avatars/5.jpg" /></td>
                                         <td>Thornton</td>
                                         <td>@fat</td>
                                         <td>Jacob</td>
                                         <td>Thornton</td>
                                         <td>@fat</td>
                                         <td>Jacob</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
+                                        <td> ADMIN</td>
+                                        <td>Không kích hoạt</td>
                                         <td>Jacob</td>
+                                        <td><button class="btn-wide btn btn-success">Sửa</button></td>
 
                                     </tr>
                                     <tr>
                                         <td> <input type="checkbox" />
                                         <th scope="row">3</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt=""></td>
+                                        <td class="widget-content-left"><img width="40" class="rounded-circle"
+                                                src="assets/images/avatars/4.jpg" alt=""></td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
+                                        <td> ADMIN</td>
+                                        <td>Không kích hoạt</td>
                                         <td>Larry</td>
+                                        <td><button class="btn-wide btn btn-success">Sửa</button></td>
                                     </tr>
                                     <tr>
                                         <td> <input type="checkbox" />
                                         <th scope="row">4</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/1.jpg" /></td>
+                                        <td class="widget-content-left"><img width="40" class="rounded-circle"
+                                                src="assets/images/avatars/1.jpg" /></td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
+                                        <td> ADMIN</td>
+                                        <td>Không kích hoạt</td>
                                         <td>Larry</td>
+                                        <td><button class="btn-wide btn btn-success">Sửa</button></td>
                                     </tr>
                                     <tr>
                                         <td> <input type="checkbox" />
                                         <th scope="row">5</th>
-                                        <td class="widget-content-left"><img width="40" class="rounded-circle" src="assets/images/avatars/9.jpg" /></td>
+                                        <td class="widget-content-left"><img width="40" class="rounded-circle"
+                                                src="assets/images/avatars/9.jpg" /></td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
                                         <td>the Bird</td>
                                         <td>@twitter</td>
                                         <td>Larry</td>
-                                        <td> <select name="select" id="exampleSelect" class="form-control">
-                                                <option>ADMIN</option>
-                                                <option>Giáo Viên</option>
-                                                <option>Học Sinh</option>
-                                        </td>
-                                        <td> <input type="checkbox" />
-                                        </td>
+                                        <td> ADMIN</td>
+                                        <td>Không kích hoạt</td>
                                         <td>Larry</td>
+                                        <td><button class="btn-wide btn btn-success">Sửa</button></td>
                                     </tr>
                                 </tbody>
                             </table>
