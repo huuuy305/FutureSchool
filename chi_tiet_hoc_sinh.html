@@ -225,224 +225,121 @@
 				<div class="app-main__inner">
 					<h5 class="card-title_2" class="widget-content-left"><img width="40" class="rounded-circle"
 						src="assets/images/avatars/4.jpg" alt=""></h5>
-
 					<div class=" card-title_2">
-						<div class="form-row">
-							<div class="col-md-3 mb-3">
-								<input type="text" name="name" id="name" class="form-control"></div>
-									</div>
-									<div class="col-md-3 mb-3"><label for="exampleEmail" class="">Email</label><input
-											name="email" id="exampleEmail" type="email" class="form-control"></div>
+					<div class="form-row">
+						<div class=" col-md-3 mb-2">
+							<input type="text" class="form-control" id="text" required placeholder="Nguyễn Lan Anh">
+						</div>
+						<div class=" col-md-3 mb-2">
+							<input type="text" class="form-control" id="text" required placeholder="Trần Diễm My">
+						</div>
+
 					</div>
 					<div class="form-row">
-						<div class="col-md-3 mb-3"><label for="name" class="">Lớp</label><input
-							type="text" name="name" id="name" class="form-control"></div>
-							<div class="col-md-3 mb-3"><label for="name" class="">Số điện thoại</label><input
-								type="text" name="name" id="name" class="form-control"></div>
-					</div>
-				</div>
-					<div class="menu_01">
-						<ul>
-							<li id="menu_li"><button
-									class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-									title="Xoá"><i class="pe-7s-trash btn-icon-wrapper"></i> Xoá nhiều</button></li>
-							<li id="menu_li"><a
-									class="mr-2 btn-icon btn-icon-only btn btn-outline-success thaiosnit-btn-delete-member"
-									href="them_hs.html">Thêm HS</a></li>
-						</ul>
-					</div>
-					<button class="accordion">Lọc</button>
-					<div class="panel">
-						<div class="card-body">
-							<form class="needs-validation" novalidate>
-								<div class="form-row">
-									<div class="col-md-3 mb-3"><label for="name" class="">Họ & tên</label><input
-											type="text" name="name" id="name" class="form-control">
-									</div>
-									<div class="col-md-3 mb-3"><label for="exampleEmail" class="">Email</label><input
-											name="email" id="exampleEmail" type="email" class="form-control"></div>
-
-									<div class="col-md-3 mb-3"><label for="name" class="">Số điện thoại</label><input
-											type="text" name="name" id="name" class="form-control"></div>
-
-									<div class="col-md-2 mb-4">
-										<label for="text">Điểm Trung Bình #10</label>
-										<input type="text" class="form-control" id="text" required>
-									</div>
-									<div class="col-md-2 mb-4">
-										<label for="text">Tiến Trình Trung Bình</label>
-										<input type="text" class="form-control" id="text" required>
-									</div>
-
-									<div class="col-md-2 mb-4"><label for="name" class="">Thứ Hạng Trong
-											Lớp</label><input type="text" name="name" id="name" class="form-control">
-									</div>
-
-									<div class="col-md-2 mb-4">
-										<button class="mt-1 btn btn-primary" type="submit" name="filtermember"
-											style="margin-top: 30px!important;width: 120px;">Lọc</button>
-									</div>
-								</div>
-							</form>
+						<div class=" col-md-3 mb-2">
+							<input type="text" class="form-control" id="text" required placeholder="Nguyễn Lan Anh">
+						</div>
+						<div class=" col-md-3 mb-2">
+							<input type="text" class="form-control" id="text" required placeholder="Trần Diễm My">
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="card-body">
-					<h5 class="card-title">Danh sách Học Sinh</h5>
-					<div class="menu_01">
-						<ul>
-							<li id="menu_li"><button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-alternate"  data-toggle="modal" data-target="#exampleModal"
-								>Import HS</button></li>
-							<li id="menu_li"><button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-warning"
-								id="table2excel">Export HS</button></li>
-						</ul>
-						<input type="file" id="input" accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
-
-<div id="result"></div>
-<table id="grid1"></table>
-					</div>
+					<h5 class="card-title">Chi tiết học sinh</h5>
 					<div class="main-card mb-3 card">
 						<div class="card-body_2">
 							<table class="mb-0 table table-bordered" id="table2excel">
-								<th><input type="checkbox"></th>
-								<th>ID</th>
 								<th>STT</th>
-								<th>Avatar</th>
-								<th>Họ & Tên</th>
-								<th>Email</th>
-								<th>Số Điện Thoại</th>
+								<th>Giáo Trình</th>
+								<th>Giáo Viên</th>
+								<th>Unit Học Cuối</th>
 								<th>Điểm Trung Bình #10</th>
 								<th>Điểm Trung Bình Giáo Trình</th>
-								<th>Thời Gian Học Trung Bình</th>
-								<th>Tiến Trình Trung Bình</th>
+								<th>Thời Gian Học</th>
+								<th>Tiến Trình</th>
 								<th>Thứ Hạng Trong Lớp</th>
-								<th>Thao tác</th>
+								<th>Thứ Hạng Trong Bảng Xếp Hạng Toàn Khoá</th>
+								<th>Chi Tiết</th>
 								</thead>
 								<tbody>
 									<tr>
-										<td><input type="checkbox"></td>
-
-										<td>30</td>
 										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">OKE na</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>9,5</td>
-										<td>300/800</td>
-										<td>30:00</td>
+										<td>Smart 1</td>
+										<td>Lan Anh</td>
+										<td>Unit3:Global</td>
+										<td>8</td>
+										<td>300/1500</td>
+										<td>45:00</td>
 										<td>30%</td>
-										<td>5</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<td>8</td>
+										<td>150</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-
-										<td>30</td>
-										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">VJP PRO NO1</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>7,5</td>
-										<td>300/800</td>
-										<td>30:00</td>
+										<th scope="row">2</th>
+										<td>Smart 7</td>
+										<td>blue Anh</td>
+										<td>Unit3:Global</td>
+										<td>8</td>
+										<td>300/1500</td>
+										<td>45:00</td>
 										<td>30%</td>
-										<td>2</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<td>8</td>
+										<td>150</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-
-										<td>30</td>
-										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">Đỗ Bảo Hoàng</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>4,8</td>
-										<td>300/800</td>
-										<td>30:00</td>
+										<th scope="row">3</th>
+										<td>Smart 1</td>
+										<td>Lan Anh</td>
+										<td>Unit3:Global</td>
+										<td>8</td>
+										<td>300/1500</td>
+										<td>45:00</td>
 										<td>30%</td>
-										<td>3</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<td>8</td>
+										<td>150</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-
-										<td>38</td>
-										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">Nguyễn Huy Dũng</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>5,2</td>
-										<td>300/800</td>
-										<td>30:00</td>
+										<th scope="row">4</th>
+										<td>Smart 1</td>
+										<td>Lan Anh</td>
+										<td>Unit3:Global</td>
+										<td>8</td>
+										<td>300/1500</td>
+										<td>45:00</td>
 										<td>30%</td>
-										<td>6</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<td>8</td>
+										<td>150</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-
-										<td>34</td>
-										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">Trần Ngọc Ánh</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>8,5</td>
-										<td>300/800</td>
-										<td>30:00</td>
+										<th scope="row">5</th>
+										<td>Smart 1</td>
+										<td>Lan Anh</td>
+										<td>Unit3:Global</td>
+										<td>8</td>
+										<td>300/1500</td>
+										<td>45:00</td>
 										<td>30%</td>
-										<td>1</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<td>8</td>
+										<td>150</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-										<td>20</td>
-										<th scope="row">1</th>
-										<td class="widget-content-left"><img width="40" class="rounded-circle"
-												src="assets/images/avatars/4.jpg" alt=""></td>
-										<td><a href="chi_tiet_hoc_sinh.html">Trần Ngọc Dũng</a></td>
-										<td>FUTURELANG@GMAIL.COM</td>
-										<td>0888555333</td>
-										<td>4,5</td>
-										<td>300/800</td>
-										<td>30:00</td>
-										<td>30%</td>
-										<td>4</td>
-										<td><button
-												class="mr-2 btn-icon btn-icon-only btn btn-outline-danger thaiosnit-btn-delete-member"
-												title="Xoá" data="5"><i
-													class="pe-7s-trash btn-icon-wrapper"></i></button>
-										</td>
+										<th scope="row">6</th>
+										<td>Smart 1</td>
+										<td>Lan Anh</td>
+										<td>Unit3:Global</td>
+										<td>9</td>
+										<td>300/1500</td>
+										<td>35:00</td>
+										<td>60%</td>
+										<td>8</td>
+										<td>120</td>
+										<td><a href="chi_tiet_khoa_hoc.html">Chi tiết</a></td>
 									</tr>
 									</tr>
 								</tbody>
@@ -582,11 +479,8 @@ function createGrid(data, gridColumns) {
         width: "100%",
 
     });
-
-
 }
 		</script>
-
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
@@ -611,6 +505,27 @@ function createGrid(data, gridColumns) {
 			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
 		</script>
 		<script type="text/javascript" src="assets/scripts/main.js"></script>
+
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="modal fade" id="Thaisonit-box-delete-member" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
